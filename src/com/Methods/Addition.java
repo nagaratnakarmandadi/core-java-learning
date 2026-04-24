@@ -29,13 +29,13 @@ public class Addition {
 		sc.close();// ✅ correct call
 	}
 
-	static void addition(int i, int j, float a1, float b1, double d1, double d2, long l1, long l2) {
+	static void addition(int i, int j, float l, float m, double d1, double d2, long l1, long l2) {
 
 		System.out.println("addition method with multiple arguments");
 
 		int sum = i + j;
 		int diff = i - j;
-		float mul = a1 * b1;
+		float mul = l * m;
 		double mod = d1 % d2;
 		long div = l1 / l2;
 
