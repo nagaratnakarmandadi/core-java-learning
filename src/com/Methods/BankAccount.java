@@ -29,6 +29,6 @@ public class BankAccount {
 		BankAccount b1 = new BankAccount();
 		System.out.println(b1.gc);
 
-	
+	sc.close();
 	}
 }
