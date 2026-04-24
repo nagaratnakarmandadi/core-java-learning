@@ -3,6 +3,7 @@ package com.Methods;
 import java.util.Scanner;
 
 public class BankAccount {
+	String gc = "thank you visit again ";
 
 	public static void main(String[] args) {
 
@@ -25,7 +26,9 @@ public class BankAccount {
 		System.out.println("Account No: " + accNo);
 		System.out.println("Balance: " + balance);
 		System.out.println("Active: " + isActive);
+		BankAccount b1 = new BankAccount();
+		System.out.println(b1.gc);
 
-		sc.close();
+	
 	}
 }
