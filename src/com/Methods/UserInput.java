@@ -6,6 +6,8 @@ public class UserInput {
 
 	public static void main(String[] args) {
 		method1();
+		method2();
+
 	}
 
 	static void method1() {
@@ -28,4 +30,9 @@ public class UserInput {
 		sc.close();
 
 	}
+
+	static void method2() {
+		System.out.println("print method 2");
+	}
+
 }
