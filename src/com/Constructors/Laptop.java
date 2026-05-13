@@ -1,12 +1,14 @@
 package com.Constructors;
 
- public class Laptop {
+public class Laptop {
 	String brand;
 	String processor;
 	int ram;
 	double price;
+	String color;
+	String weight;
 
-	Laptop(String brand, String processor) {
+	Laptop(String brand, String processor,String color, String weight) {
 		this.brand = brand;
 		this.processor = processor;
 	}
@@ -16,11 +18,19 @@ package com.Constructors;
 		this.price = price;
 	}
 
-	Laptop(Laptop l1, Laptop l2) {
+	Laptop(String color, String weight) {
+		this.color = color;
+		this.weight = weight;
+	}
+
+	Laptop(Laptop l1, Laptop l2,Laptop l3) {
 		this.brand = l1.brand;
 		this.processor = l1.processor;
 		this.ram = l2.ram;
 		this.price = l2.price;
+		this.color=l3.color;
+		this.weight=l3.weight;
+		
 	}
 
 	void show() {
@@ -28,13 +38,16 @@ package com.Constructors;
 		System.out.println("Processor: " + processor);
 		System.out.println("RAM: " + ram);
 		System.out.println("Price: " + price);
+		System.out.println("color :" + color);
+		System.out.println("weight :" + weight);
 	}
 
 	public static void main(String[] args) {
 		Laptop l1 = new Laptop("Dell", "i7");
 		Laptop l2 = new Laptop(16, 80000);
 
-		Laptop l3 = new Laptop(l1, l2);
-		l3.show();
+		Laptop l3 = new Laptop("black", "l20");
+		Laptop l4= new Laptop(l1,l2,l3);
+		l4.show();
 	}
 }

@@ -6,7 +6,7 @@ public class UserInput {
 
 	public static void main(String[] args) {
 		method1();
-		method2();
+	
 
 	}
 
