@@ -13,12 +13,14 @@ public class EmpDetails {
 		int age = t.getEmpAge();
 		double sal = t.getEmpSal();
 		double bonus = t.getEmpBonus();
+		int hours = t.getEmpHours();
 		double totsal = sal + bonus;
 		System.out.println("fullname of emp : " + fullname);
 		System.out.println("fullname of emp : " + age);
 		System.out.println("fullname of emp : " + sal);
 		System.out.println("fullname of emp : " + bonus);
 		System.out.println("total salary of emp :" + totsal);
+		System.out.println("total working hours per day:" + hours);
 		t.sc.close();
 
 	}
@@ -46,6 +48,12 @@ public class EmpDetails {
 		System.out.println("enter your bonus ..");
 		double bonus = sc.nextDouble();
 		return bonus;
+	}
+
+	int getEmpHours() {
+		System.out.println("enter you hours..");
+		int hours = sc.nextInt();
+		return hours;
 	}
 
 }
