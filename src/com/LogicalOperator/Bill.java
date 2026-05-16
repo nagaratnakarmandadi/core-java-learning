@@ -47,7 +47,7 @@ public class Bill {
 		} while (yn.equalsIgnoreCase("Y"));
 
 		display();
-
+  
 		sc.close();
 
 	}

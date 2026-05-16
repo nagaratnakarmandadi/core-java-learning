@@ -1,20 +1,23 @@
 package com.LogicalOperator;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Loop {
 
 	public static void main(String[] arg) {
-		// Scanner sc = new Scanner(System.in);
-		// stem.out.println("entter a number");
-		// int n = sc.nextInt();
-		// TODO Auto-generated constructor stub
-		int n = 5;
-		for (int i = 1; i <= 11; i++) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
 
-			System.out.println( (n * i));
-			// sc.close();
+		// for (int i = 1; i <= num; i++) {
+
+		// System.out.println(num + "*" + i + "=" + (num * i));
+
+		// int sum = 0;
+		for (int i = 1; i <= num; i++) {
+			num = num * i;
+
 		}
+		System.out.println(num);
 	}
 
 }
