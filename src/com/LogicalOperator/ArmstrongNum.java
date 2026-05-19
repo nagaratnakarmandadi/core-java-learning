@@ -23,6 +23,7 @@ public class ArmstrongNum {
 		} else {
 			System.out.println("not armstrong");
 		}
+		sc.close();
 		// TODO Auto-generated method stub
 
 	}

@@ -2,20 +2,23 @@ package com.LogicalOperator;
 
 import java.util.Scanner;
 
-public class CountDigit {
+public class FactorialNum {
 
 	public static void main(String[] args) {
-		System.out.println("count digit");
+		System.out.println("find factorial  ");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter a num");
+		System.out.println("enter a number");
 		int num = sc.nextInt();
-		int count = 0;
-		while (num != 0) {
-			num = num / 10;
-			count++;
+
+		int sum = 0;
+		for (int i = 1; i > num; i++) {
+
+			sum = i * i;
+
 		}
-		System.out.println(count);
+		System.out.println(sum);
 		sc.close();
+
 		// TODO Auto-generated method stub
 
 	}

@@ -20,7 +20,9 @@ public class PerfectNum {
 		} else {
 			System.out.println("not a perfect number");
 		}
+		sc.close();
 
 	}
+	
 
 }
