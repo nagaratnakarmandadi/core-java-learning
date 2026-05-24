@@ -33,7 +33,7 @@ public class Addition {
 
 		System.out.println("addition method with multiple arguments");
 
-		int sum = i + j;
+		int sum = i + j; 
 		int diff = i - j;
 		float mul = l * m;
 		double mod = d1 % d2;
