@@ -12,7 +12,7 @@ public class PrimeNumber {
 		System.out.println("enter numbers from an array");
 		for (int i = 0; i < size; i++) {
 			num[i] = sc.nextInt();
-			
+
 		}
 		System.out.println("proceed to print prime numbers");
 		for (int i = 0; i < size; i++) {
