@@ -4,7 +4,7 @@ public class Mark {
 
 	public class StudentMarks {
 
-		public static void main(String[] args) {
+		public static void main(ForEach[] args) {
 
 			int[][] marks = { { 80, 75, 90 }, { 65, 70, 60 }, { 95, 88, 92 } };
 

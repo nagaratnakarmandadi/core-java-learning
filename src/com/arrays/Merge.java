@@ -2,7 +2,7 @@ package com.arrays;
 
 public class Merge {
 
-	public static void main(String[] args) {
+	public static void main(ForEach[] args) {
 		int[] a = { 123 };
 		int alen = a.length;
 		int[] b = { 4567 };

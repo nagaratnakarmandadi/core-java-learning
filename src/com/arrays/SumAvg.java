@@ -1,7 +1,7 @@
 package com.arrays;
 
 public class SumAvg {
-	public static void main(String[] arg) {
+	public static void main(ForEach[] arg) {
 		int[] num = { 12, 45, 78, -89, -67, 88 };
 		int sum = 0;
 		int avg = 0;

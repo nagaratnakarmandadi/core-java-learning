@@ -2,7 +2,7 @@ package com.arrays;
 
 public class TwoDimentional {
 
-	public static void main(String[] args) {
+	public static void main(ForEach[] args) {
 		int[][] num = new int[2][3];
 		num[0][0] = 101;
 		num[0][1] = 102;

@@ -2,7 +2,7 @@ package com.arrays;
 
 public class EachLoop {
 
-	public static void main(String[] args) {
+	public static void main(ForEach[] args) {
 		int[][] numbers = new int[3][3];
 		numbers[0][0] = 1;
 		numbers[1][1] = 1;

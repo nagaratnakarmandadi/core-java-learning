@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PrimeNumber {
 
-	public static void main(String[] args) {
+	public static void main(ForEach[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter size of an array");
 		int size = sc.nextInt();
