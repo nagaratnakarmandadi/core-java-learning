@@ -8,7 +8,7 @@ public class MinMax {
 		for (int i = 0; i < num.length; i++) {
 			for (int j = 0; j < num.length - 1 - i; j++) {
 				if (num[j] > num[j + 1]) {
-					temp = num[j + 1];
+					temp =num[j + 1];
 					num[j + 1] = num[j];
 					num[j] = temp;
 
