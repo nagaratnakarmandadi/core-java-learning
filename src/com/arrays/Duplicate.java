@@ -1,0 +1,25 @@
+package com.arrays;
+
+public class Duplicate {
+
+	public static void main(String[] args) {
+		int[] num = { 50, 50, 40, 40, 30, 10, 10, 10, 20, 20, 5, 5 };
+		int temp = 0;
+		for (int i = 0; i < num.length; i++) {
+			for (int j = i + 1; j < num.length; j++) {
+				if (num[j] < num[i]) {
+					temp = num[i];
+					num[i] = num[j];
+					num[j] = temp;
+				}
+			}
+		}
+		System.out.println("Ascending ORDER");
+		for (int i = 0; i < num.length; i++) {
+			System.out.print(num[i] + " ");
+
+		}
+
+	}
+
+}
