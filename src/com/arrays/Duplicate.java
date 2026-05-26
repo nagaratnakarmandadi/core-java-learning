@@ -15,10 +15,12 @@ public class Duplicate {
 			}
 		}
 		System.out.println("Ascending ORDER");
-		for (int i = 0; i < num.length; i++) {
-			System.out.print(num[i] + " ");
+		for (int i = 0; i < num.length - 1; i++) {
+			if (num[i] != num[i + 1])
+				System.out.print(num[i] + " ");
 
 		}
+		System.out.println(num[num.length - 1]);
 
 	}
 
