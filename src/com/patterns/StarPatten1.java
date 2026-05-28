@@ -9,6 +9,7 @@ public class StarPatten1 {
 			}
 			System.out.println();
 		}
+		
 
 	}
 
