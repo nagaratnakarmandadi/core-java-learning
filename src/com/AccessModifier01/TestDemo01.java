@@ -14,7 +14,7 @@ public class TestDemo01 {
 	 public int id2 = 45;
 	 public String name2 = "hitman";
 
-	 public TestDemo01() {
+	 public  TestDemo01() {
 		System.out.println("hello construstor");
 	}
 
@@ -40,6 +40,7 @@ public class TestDemo01 {
 	}
 
 	private class TestInDemo1 {
+		
 
 	}
 
