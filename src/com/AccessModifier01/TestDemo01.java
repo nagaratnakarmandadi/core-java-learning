@@ -18,10 +18,12 @@ public class TestDemo01 {
 		System.out.println("hello construstor");
 	}
 
-	private void method1() {
+	//public void method1() {
+	 protected void method1() {
+		 
 
 	}
-	public void method3() {
+	protected  void method3() {
 		System.out.println("method 3");
 	}
 
@@ -40,6 +42,9 @@ public class TestDemo01 {
 	}
 
 	private class TestInDemo1 {
+		static void password() {
+			int inst=1234;
+		}
 		
 
 	}
