@@ -1,9 +1,10 @@
 package com.Constructors;
 
-public class Car {
+ class Car {
 	String name;
 	String brand;
 	String color;
+	double prize;
 
 	Car() {
 		System.out.println("constructor called");
@@ -18,6 +19,21 @@ public class Car {
 	public Car(String name, String brand) {
 		this.name = name;
 		this.brand = brand;
+
+	}
+
+	public Car(String name, String brand, String colour, double prize) {
+		this.name = name;
+		this.brand = brand;
+		this.color = colour;
+		this.prize = prize;
+	}
+
+	void display2() {
+		System.out.println("name of the car :" + name);
+		System.out.println("brand of the car :" + brand);
+		System.out.println("color of the car :" + color);
+		System.out.println("prize of the car :" + prize);
 
 	}
 
@@ -40,7 +56,14 @@ public class Car {
 		c.disply();
 		Car c2 = new Car("swift", "suziki");
 		c2.disply1();
+		Car c3 = new Car("base model", "bmw", "balck", 10000000);
+		c3.display2();
 
+	}
+	final  class paid{
+		 double cost =200;
+		
 	}
 
 }
+ 
