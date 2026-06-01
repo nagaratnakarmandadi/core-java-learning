@@ -8,9 +8,8 @@ public class TestDemo03 {
 
 		System.out.println("main method started ");
 		TestDemo01 t1 = new TestDemo01();
-		System.out.println(t1.id2);
-		System.out.println(t1.name2);
-		//t1.method3();
+		//instagram();
+		t1.youtube();
 
 	}
 }
