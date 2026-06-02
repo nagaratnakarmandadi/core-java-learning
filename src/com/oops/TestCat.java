@@ -16,6 +16,10 @@ public class TestCat {
 		c1.sound();
 		c1.eat();
 		c1.sleep();
+		Animal p = new Priya();
+		p.sound();
+		p.eat();
+		p.sleep();
 
 	}
 
