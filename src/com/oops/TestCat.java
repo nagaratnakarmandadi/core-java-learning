@@ -12,6 +12,10 @@ public class TestCat {
 		d.sound();
 		d.eat();
 		d.sleep();
+		Animal c1 = new Cow();
+		c1.sound();
+		c1.eat();
+		c1.sleep();
 
 	}
 
