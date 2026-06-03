@@ -2,7 +2,7 @@ package com.oops;
 
 public class Student {
 
-	private int sid;
+	private int sid =12;
 	private String sname;
 	private int sage;
 
@@ -31,6 +31,8 @@ public class Student {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("main  metohd ");
+		
 
 	}
 

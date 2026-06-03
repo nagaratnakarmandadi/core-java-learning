@@ -9,6 +9,10 @@ public interface Animal {
 
 	public abstract void sleep();
 
+	public default void walk() {
+		System.out.println("every animal can walk");
+	}
+
 	default void method1() {
 		System.out.println("hello method 1");
 	}
