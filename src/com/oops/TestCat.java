@@ -9,21 +9,26 @@ public class TestCat {
 		c.eat();
 		c.sleep();
 		c.walk();
+		Animal.breath();
+		c.method1();
 		Animal d = new Dog();
 		d.sound();
 		d.eat();
 		d.sleep();
-		c.walk();
+		d.walk();
+		Animal.breath();
 		Animal c1 = new Cow();
 		c1.sound();
 		c1.eat();
 		c1.sleep();
-		c.walk();
+		c1.walk();
+		Animal.breath();
 		Animal p = new Priya();
 		p.sound();
 		p.eat();
 		p.sleep();
-		c.walk();
+		p.walk();
+		Animal.breath();
 
 	}
 

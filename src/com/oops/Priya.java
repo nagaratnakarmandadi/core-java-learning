@@ -16,7 +16,9 @@ public class Priya implements Animal {
 	public void sleep() {
 		System.out.println("24 hrous per day");
 	}
-	
-	
+
+	public void walk() {
+		System.out.println("she can walk and jump also");
+	}
 
 }

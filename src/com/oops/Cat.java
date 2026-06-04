@@ -19,5 +19,10 @@ public class Cat implements Animal {
 		System.out.println("sleep at night");
 
 	}
-	
+
+	public void method2() {
+		System.out.println("hello");
+
+	}
+
 }
