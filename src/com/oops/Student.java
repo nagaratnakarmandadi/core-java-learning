@@ -2,9 +2,10 @@ package com.oops;
 
 public class Student {
 
-	private int sid =12;
-	private String sname;
-	private int sage;
+	private int sid = 12;
+	private String sname = "balaji";
+	private int sage = 43;
+	private int smarks = 49;
 
 	public void setSid(int sid) {
 		this.sid = sid;
@@ -28,12 +29,20 @@ public class Student {
 
 	public int getSage() {
 		return sage;
+	} 
+
+	public void setSmarks(int smarks) {
+		this.smarks = smarks;
+	}
+
+	public int getSmarks() {
+		return smarks;
 	}
 
 	public static void main(String[] args) {
 		System.out.println("main  metohd ");
-		
-
+		Student s = new Student();
+		System.out.println(s.sid);
 	}
 
 }
