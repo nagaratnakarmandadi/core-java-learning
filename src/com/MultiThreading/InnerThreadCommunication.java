@@ -1,0 +1,113 @@
+package com.MultiThreading;
+
+class Resource {
+
+	int i;
+	boolean status = false;
+
+	synchronized void put(int i) throws InterruptedException {
+
+		while (status) {
+			wait();
+		}
+
+		this.i = i;
+
+		System.out.println("Put : " + i);
+
+		status = true;
+
+		notify();
+	}
+
+	synchronized void get() throws InterruptedException {
+
+		while (!status) {
+			wait();
+		}
+
+		System.out.println("Get : " + i);
+
+		status = false;
+
+		notify();
+	}
+}
+
+class Producer implements Runnable {
+
+	Resource r;
+
+	Producer(Resource r) {
+
+		this.r = r;
+
+		Thread t = new Thread(this, "Producer");
+
+		t.start();
+	}
+
+	@Override
+	public void run() {
+
+		int i = 1;
+
+		while (true) {
+
+			try {
+
+				r.put(i++);
+
+				Thread.sleep(1000);
+
+			} catch (InterruptedException e) {
+
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+class Consumer implements Runnable {
+
+	Resource r;
+
+	Consumer(Resource r) {
+
+		this.r = r;
+
+		Thread t = new Thread(this, "Consumer");
+
+		t.start();
+	}
+
+	@Override
+	public void run() {
+
+		while (true) {
+
+			try {
+
+				r.get();
+
+				Thread.sleep(1000);
+
+			} catch (InterruptedException e) {
+
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class InnerThreadCommunication {
+
+	public static void main(String[] args) {
+
+		Resource r = new Resource();
+
+		new Producer(r);
+
+		new Consumer(r);
+	}
+}
